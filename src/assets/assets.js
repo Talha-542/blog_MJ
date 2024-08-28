@@ -55,30 +55,30 @@ export const category_list = [
         count: "20 articles",
         image: category_4,
     },
-    {
-        id: 4,
-        name: "Lifestyle",
-        count: "20 articles",
-        image: category_3,
-    },
-    {
-        id: 5,
-        name: "Education",
-        count: "20 articles",
-        image: category_4,
-    },
-    {
-        id: 6,
-        name: "Food",
-        count: "20 articles",
-        image: category_3,
-    },
-    {
-        id: 7,
-        name: "Entertainment",
-        count: "20 articles",
-        image: category_1,
-    },
+    // {
+    //     id: 4,
+    //     name: "Lifestyle",
+    //     count: "20 articles",
+    //     image: category_3,
+    // },
+    // {
+    //     id: 5,
+    //     name: "Education",
+    //     count: "20 articles",
+    //     image: category_4,
+    // },
+    // {
+    //     id: 6,
+    //     name: "Food",
+    //     count: "20 articles",
+    //     image: category_3,
+    // },
+    // {
+    //     id: 7,
+    //     name: "Entertainment",
+    //     count: "20 articles",
+    //     image: category_1,
+    // },
 ];
 
 export const posts = [
