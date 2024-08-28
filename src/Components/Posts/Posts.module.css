@@ -1,0 +1,126 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 12px;
+  margin-bottom: 1px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  list-style: none;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  z-index: 1;
+  margin-top: 5px;
+  overflow: hidden;
+  animation: fadeIn 0.3s ease-in-out;
+  list-style: none;
+  padding-left: 0;
+  padding-top: 3px;
+  border: 1px solid #ccc;
+  color: #00000080;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+.dropdownButton {
+  background-color: transparent;
+  border: 1px solid #00000033;
+  border-radius: 8px;
+  padding: 10px, 20px, 10px, 20px;
+  height: 30px;
+  width: 100px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #00000080;
+}
+
+.hr {
+  width: 70%;
+}
+.posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+  }
+  
+  .postCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center content vertically if needed */
+    border: 1px solid #00000033;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  .postCard img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .postTitle {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+  }
+  
+  .postInfo img {
+    width: 50px;
+    height: 50px;
+  }
+  
+
+
+@media (max-width: 1200px) {
+    .posts {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .posts {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .posts {
+      grid-template-columns: 1fr;
+    }
+  }
+  
