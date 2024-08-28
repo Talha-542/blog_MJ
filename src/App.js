@@ -1,15 +1,10 @@
-import Navbar from '../src/Components/Navbar/Navbar'
 import './App.css';
-import TopCategories from './Components/TopCategories/Categories';
-import Header from './Components/Header/Header';
-
+import Home from './Pages/Home';
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <Header/>
-      <TopCategories/>
+      <Home/>
     </div>
   );
 }
