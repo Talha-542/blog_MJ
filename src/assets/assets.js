@@ -7,9 +7,9 @@ import logo from './logo.png';
 
 // Category list assets
 import category_1 from './category_1.png';
-import category_2 from './category_2.png';
 import category_3 from './category_3.png';
 import category_4 from './category_4.png';
+// import category_3 from './category_.png'
 
 // Import post images
 import post_1 from './post_1.png';
@@ -32,48 +32,56 @@ export const assets = {
 
 export const category_list = [
     {
-        category_name: "Tech",
-        article_count: "20 articles",
-        category_image: category_1,
+        id: 1,
+        name: "Tech",
+        count: "20 articles",
+        image: category_1,
     },
     {
-        category_name: "Health",
-        article_count: "20 articles",
-        category_image: category_2,
+        id: 2,
+        name: "Health",
+        count: "20 articles",
+        image: category_3,
     },
     {
-        category_name: "Finance",
-        article_count: "20 articles",
-        category_image: category_3,
+        id: 3,
+        name: "Finance",
+        count: "20 articles",
+        image: category_3,
     },
     {
-        category_name: "Travel",
-        article_count: "20 articles",
-        category_image: category_4,
+        id: 4,
+        name: "Travel",
+        count: "20 articles",
+        image: category_4,
     },
     {
-        category_name: "Lifestyle",
-        article_count: "20 articles",
-        category_image: category_2,
+        id: 4,
+        name: "Lifestyle",
+        count: "20 articles",
+        image: category_3,
     },
     {
-        category_name: "Education",
-        article_count: "20 articles",
-        category_image: category_4,
+        id: 5,
+        name: "Education",
+        count: "20 articles",
+        image: category_4,
     },
     {
-        category_name: "Food",
-        article_count: "20 articles",
-        category_image: category_3,
+        id: 6,
+        name: "Food",
+        count: "20 articles",
+        image: category_3,
     },
     {
-        category_name: "Entertainment",
-        article_count: "20 articles",
-        category_image: category_1,
+        id: 7,
+        name: "Entertainment",
+        count: "20 articles",
+        image: category_1,
     },
 ];
 
-export const post = [
+export const posts = [
     {
         id: 1,
         postTitle: "How Tomorrow's Innovations Will Change the World",

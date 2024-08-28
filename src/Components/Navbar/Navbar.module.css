@@ -1,0 +1,53 @@
+.navbar_left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  
+
+
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.firstname, .lastname {
+  font-family: Poppins, sans-serif;
+  font-size: 24px;  
+  margin: 0;
+  padding: 0;
+}
+
+.firstname {
+  font-weight: 900;
+  line-height: 36px;
+}
+
+.lastname {
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.navbar_right {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.blogs {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #0075FF;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.menuIcon {
+  width: 24px;
+  height: 24px;
+}
