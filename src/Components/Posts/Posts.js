@@ -38,9 +38,10 @@ const Posts = () => {
             <div>
               <div className={styles.postTitle}>{post.title}</div>
               <div className={styles.postDescription}>{post.description}</div>
-              <div className={styles.postInfo}>
                 <img src={arthur_logo} alt="author logo" className={styles.arthurLogo} />
-                {post.date}
+              <div className={styles.postInfo}>
+                <p>{post.autherName}</p><br/>
+               <span>{post.date}</span> 
               </div>
             </div>
           </div>
