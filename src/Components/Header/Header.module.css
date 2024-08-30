@@ -10,11 +10,13 @@
   font-size: 24px;
   font-weight: 700;
   line-height: 36px;
+  margin-bottom: 10px;
 }
 .description {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  margin-bottom: 40px;
 }
 .searchIcon {
   width: 24px;
@@ -26,7 +28,7 @@
   }
   .mbl_header {
     display: block;
-    margin: 0 1em;
+    margin: 2 2em;
   }
   .title {
     font-size: 20px;
@@ -41,13 +43,16 @@
   .mbl_header {
     display: none;
   }
+
   .header {
-    margin: 0 2em;
+    margin: 2 2em; /* Adjust this margin to keep the title and description fixed */
   }
+
   .title {
     font-size: 24px;
     line-height: 36px;
   }
+
   .description {
     font-size: 16px;
     line-height: 24px;

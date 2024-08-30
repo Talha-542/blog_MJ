@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Header.module.css';
-import search_icon from '../../assets/search_icon.png';
+import search_icon from '../../assets/Search.svg';
 export default function Header() {
   return (
     <>
