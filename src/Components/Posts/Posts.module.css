@@ -1,143 +1,101 @@
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  /* margin-left: -30px; */
+  /* margin: 0 10em; */
+  /* margin-top: 3em; */
 }
-
 .title {
-  font-family: "Poppins", sans-serif;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 700;
-  /* margin-left: 12px; */
-  margin-bottom: 1px;
+  line-height: 24px;
 }
-
 .dropdown {
-  position: relative;
-  display: inline-block;
-  list-style: none;
-}
-
-.dropdownContent {
-  display: none;
-  position: absolute;
-  background-color: white;
-  min-width: 100px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-  z-index: 1;
-  margin-top: 5px;
-  overflow: hidden;
-  animation: fadeIn 0.3s ease-in-out;
-  list-style: none;
-  padding-left: 0;
-  padding-top: 3px;
-  border: 1px solid #ccc;
   color: #00000080;
-  cursor: pointer;
-}
-
-.dropdown:hover .dropdownContent {
-  display: block;
-}
-
-.dropdownButton {
-  background-color: transparent;
-  border: 1px solid #00000033;
-  border-radius: 8px;
-  padding: 10px, 20px, 10px, 20px;
-  height: 30px;
-  width: 100px;
-  font-family: Poppins;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  text-align: center;
-  color: #00000080;
-}
-
-.hr {
-  width: 70%;
+  border: 1px solid #00000033;
+  outline: #00000033;
+  border-radius: 10px;
+  padding: 10px 40px 10px 20px;
+  appearance: none;
+  background: url("../../assets/down\ arrow.png") no-repeat right 12px center;
+  cursor: pointer;
 }
 .posts {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* margin: 0 10em; */
+  /* margin-top: 1em; */
+  /* gap: 43px; */
 }
-
 .postCard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   border: 1px solid #00000033;
-  padding: 20px;
-  gap: 20px;
   border-radius: 20px;
-  margin-bottom: 10px;
-  box-sizing: border-box;
+  padding: 20px;
 }
-
-.postCard img {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  height: auto;
+.postImage {
+  width: 205px;
+  height: 120px;
+  border-radius: 10px;
 }
-
 .postTitle {
-  font-family: Poppins;
   font-size: 16px;
   font-weight: 600;
-  line-height: 20px;
-  text-align: left;
+  line-height: 24px;
+  margin: 10px 0;
 }
-
-
-
-.postInfo {
-  display: grid;
+.postDescription {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.author_info {
+  display: flex;
   align-items: center;
-  /* margin-top: 10px; */
 }
-
-@media (max-width: 768px) {
-  .postInfo {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 5px;
+.arthurLogo {
+  width: 36px;
+  height: 36px;
+  margin-top: 10px;
+}
+.authour_name {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+}
+.post_date {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 15px;
+  color: #00000080;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .container {
+    margin: 1em;
   }
-}
-
-@media (max-width: 480px) {
-  .postInfo {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 5px;
-  }
-}
-
-@media (max-width: 1200px) {
   .posts {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  }
-}
-
-@media (max-width: 768px) {
-  .posts {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  }
-}
-
-@media (max-width: 480px) {
-  .posts {
+    margin: 0;
     grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .postCard {
+    padding: 10px;
+    margin: 0 1em;
+  }
+  .postImage {
+    width: 280px;
+    height: 170px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    margin: 2em 2em 0 2em;
+  }
+  .posts {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 0 2em;
+    margin-top: 1em;
   }
 }

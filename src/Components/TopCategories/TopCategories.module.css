@@ -1,89 +1,104 @@
-.container {
-    max-width: 1400px;
-    margin-left: 3px;
-    
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .title {
-    font-family: 'Poppins', sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    margin-left: 12px;
-    margin-bottom: 1px;
-  }
-  
-  .seeAll {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    color: #00000080;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    margin-right: 18px; /* Align to the right edge */
-  }
-  
-  .seeAll::after {
-    content: '>';
-    margin-left: 5px;
-    font-weight: 700;
-  }
-  
+.categories {
+  display: flex;
+  justify-content: space-between;
+  /* margin: 0 10em; */
+  /* margin-top: 3em; */
+}
+.title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.allCategories {
+  display: flex;
+  align-items: center;
+}
+.seeAll {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #00000080;
+  text-decoration: none;
+  margin-right: 10px;
+}
+.categories_card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* gap: 43px; */
+  /* margin: 0 10em; */
+  /* margin-top: 1em; */
+}
+.single_card {
+  display: flex;
+  border: 1px solid #00000033;
+  border-radius: 20px;
+  padding: 20px;
+}
+.categoryImage {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  margin-right: 30px;
+}
+.category_name {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.category_articles {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.articleCountIcon {
+  margin-right: 5px;
+  width: 25px;
+  height: 25px;
+}
+.category_post_number {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #00000080;
+}
+@media (min-width: 320px) and (max-width: 767px) {
   .categories {
-    display: flex;
-    gap: 20px;
-    overflow-x: auto;
+    margin: 1em;
   }
-  
-  .categoryCard {
-    background: #fff;
-    border: 1px solid #EAEAEA;
-    border-radius: 12px;
-    width: 270px;
-    height: 80px;
-    text-align: left;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    padding: 10px; /* Add padding to align content inside the card */
-    position: relative;
+  .title,
+  .seeAll,
+  .category_name {
+    font-size: 16px;
+    line-height: 24px;
   }
-  
-  .categoryImage {
-    width: 60px;
-    height: 60px;
-    border-radius: 8px;
-    margin-right: 10px; /* Add space between the image and the text */
+  .categories_card {
+    margin: 1em;
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
-  
-  .categoryName {
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    color: black;
-    padding: 5px 0;
-    white-space: nowrap;  /* Prevent text wrapping */
+  .category_post_number {
+    font-size: 12px;
+    line-height: 18px;
   }
-  
-  .articleCount {
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    color: #555;
-    display: flex;
-    align-items: center;
-    margin-top: 5px;
-  }
-  
   .articleCountIcon {
-    width: 16px;
-    height: 16px;
-    margin-right: 5px;
+    width: 25px;
+    height: 25px;
   }
-  
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .categories {
+    margin: 2em 2em 0 2em;
+  }
+  .categories_card {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 0 2em;
+    margin-top: 1em;
+  }
+  .title,
+  .seeAll,
+  .category_name {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
