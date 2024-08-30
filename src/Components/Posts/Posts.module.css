@@ -25,9 +25,7 @@
 .posts {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  /* margin: 0 10em; */
-  /* margin-top: 1em; */
-  gap: 23px;
+ gap: 23px;
 }
 .postCard {
   border: 1px solid #00000033;
@@ -35,7 +33,7 @@
   padding: 20px;
 }
 .postImage {
-  width: 205px;
+  width: 240px;
   height: 120px;
   border-radius: 10px;
 }
