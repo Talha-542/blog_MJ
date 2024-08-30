@@ -2,7 +2,8 @@
   display: flex;
   justify-content: space-between;
   /* margin: 0 10em; */
-  /* margin-top: 3em; */
+  margin-top: 3em;
+
 }
 .title {
   font-size: 16px;
@@ -24,9 +25,9 @@
 .categories_card {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  /* gap: 43px; */
+  gap: 23px;
   /* margin: 0 10em; */
-  /* margin-top: 1em; */
+  margin-top: 1em;
 }
 .single_card {
   display: flex;
@@ -85,9 +86,9 @@
     height: 25px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width:768px) and (max-width:1024px) {
   .categories {
-    margin: 2em 2em 0 2em;
+    margin: 2em 2em 0em 2em;
   }
   .categories_card {
     grid-template-columns: 1fr 1fr;
@@ -95,10 +96,10 @@
     margin: 0 2em;
     margin-top: 1em;
   }
-  .title,
-  .seeAll,
-  .category_name {
+  .title, .seeAll, .category_name {
     font-size: 16px;
     line-height: 24px;
   }
+
 }
+

@@ -1,7 +1,8 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  /* margin: 3em 10em; */
+  /* margin: 3em 0; */
+  margin-top: 3em;
 }
 .firstname {
   font-weight: 900;
@@ -67,7 +68,7 @@
 }
 @media (min-width:1025px) and (max-width:2560px) {
   .navbar {
-    /* margin: 0; */
+    margin: 0;
   }
 }
 
