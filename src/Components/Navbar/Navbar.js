@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default function Navbar() {
   return (
     <>
-      <div className={styles.navbar}>
+      <div className={styles.navbar} style={{margin:'2em 0'}}>
         <div className={styles.title}>
           <p className={styles.firstname}>Micheal<span className={styles.lastname}>Johnstone</span> </p>
         </div>
