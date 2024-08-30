@@ -85,9 +85,9 @@
     height: 25px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width:768px) and (max-width:1024px) {
   .categories {
-    margin: 2em 2em 0 2em;
+    margin: 2em 2em 0em 2em;
   }
   .categories_card {
     grid-template-columns: 1fr 1fr;
@@ -95,14 +95,8 @@
     margin: 0 2em;
     margin-top: 1em;
   }
-  .title,
-  .seeAll,
-  .category_name {
+  .title, .seeAll, .category_name {
     font-size: 16px;
     line-height: 24px;
   }
 }
-
-
-
-
