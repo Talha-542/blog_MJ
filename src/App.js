@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 export default function App() {
   return (
     <BrowserRouter>
-    <div style={{maxWidth: "95%", margin:"0 auto"
+    <div style={{maxWidth: "90%", margin:"0 auto"
       
     }}>
 
