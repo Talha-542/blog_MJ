@@ -1,12 +1,22 @@
+import React from 'react'
 import './App.css';
+import Navbar from './Components/Navbar/Navbar';
 import Home from './Pages/Home';
-
-function App() {
+import AllCategories from './Pages/AllCategories'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+export default function App() {
   return (
-    <div className="App">
-      <Home/>
-    </div>
-  );
-}
+    <BrowserRouter>
+    <div style={{maxWidth: "95%", margin:"0 auto"
+      
+    }}>
 
-export default App;
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/all-categories' element={<AllCategories />} />
+      </Routes>
+    </div>
+    </BrowserRouter>
+  )
+}

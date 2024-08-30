@@ -4,6 +4,8 @@ import filter from './filter.png';
 import hamburger_menu from './hamburger_menu.png';
 import search_icon from './search_icon.png';
 import logo from './logo.png';
+import arrowIcon from './Arrow.png'
+import downArrow from './down arrow.png'
 
 // Category list assets
 import category_1 from './category_1.png';
@@ -21,6 +23,7 @@ import post_6 from './post_6.png';
 import post_7 from './post_7.png';
 import post_8 from './post_8.png';
 
+
 export const assets = {
     article_count_logo,
     aurthur_logo,
@@ -28,6 +31,8 @@ export const assets = {
     hamburger_menu,
     search_icon,
     logo,
+    arrowIcon,
+    downArrow
 };
 
 export const category_list = [

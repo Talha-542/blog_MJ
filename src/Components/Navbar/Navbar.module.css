@@ -1,53 +1,78 @@
-.navbar_left {
+.navbar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
-  
-
-
+  /* margin: 3em 10em; */
 }
-
-.title {
-  display: flex;
-  align-items: center;
-}
-
-.firstname, .lastname {
-  font-family: Poppins, sans-serif;
-  font-size: 24px;  
-  margin: 0;
-  padding: 0;
-}
-
 .firstname {
   font-weight: 900;
   line-height: 36px;
+  font-size: 24px;
 }
-
 .lastname {
   font-weight: 400;
   line-height: 26px;
+  font-size: 24px;
 }
-
-.navbar_right {
+.navigation {
   display: flex;
   align-items: center;
-  margin-right: 5px;
 }
-
 .blogs {
-  font-family: Poppins, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  text-align: left;
-  color: #0075FF;
   margin-right: 20px;
   text-decoration: none;
+  color: #0075FF;
+}
+.menuIcon {
+  width: 40px;
+  height: 40px;
+}
+.mbl_menuIcon {
+  display: none;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .navbar {
+    margin: 1em;
+    align-items: center;
+  }
+  .navigation {
+    display: none;
+  }
+  .mbl_menuIcon {
+    display: block;
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
+  }
+  .firstname,
+  .lastname {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mbl_menuIcon {
+    display: none;
+  }
+  .navbar {
+    margin: 2em;
+  }
+  .firstname,
+  .lastname {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+@media (min-width:1025px) and (max-width:2560px) {
+  .navbar {
+    /* margin: 0; */
+  }
 }
 
-.menuIcon {
-  width: 24px;
-  height: 24px;
-}
+
+
+
+
+
