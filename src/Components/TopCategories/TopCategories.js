@@ -1,45 +1,34 @@
 import React, { useContext } from 'react';
-import { StoreContext } from '../../store'
-import article_count_logo from '../../assets/article_count_logo.png'
-import arrowIcon from '../../assets/Arrow.png'
-import { Link } from 'react-router-dom';
+import { StoreContext } from '../../store';
+import article_count_logo from '../../assets/article_count_logo.svg'
 import styles from './TopCategories.module.css';
+import {Link} from 'react-router-dom'
+
+
 const TopCategories = () => {
   const { category_list } = useContext(StoreContext);
+
   return (
-    <>
+    <div className={styles.container}>
+      <div className={styles.header}>
+        <h2 className={styles.title}>Top Categories</h2>
+        <Link to="/all-categories" className={styles.seeAll}>See all</Link>      </div>
       <div className={styles.categories}>
-        <div>
-          <h2 className={styles.title}>Top Categories</h2>
-        </div>
-        <div className={styles.allCategories}>
-          <Link to='/all-categories' className={styles.seeAll}>See all </Link>
-          <img src={arrowIcon} alt="" />
-        </div>
+        {category_list.map(category => (
+          <div key={category.id} className={styles.categoryCard}>
+            <img src={category.image} alt={category.name} className={styles.categoryImage} />
+            <div className={styles.articleContent}>
+              <div className={styles.categoryName}>{category.name}</div>
+              <p className={styles.articleCount}>
+                <img src={article_count_logo} alt="Article count icon" className={styles.articleCountIcon} />
+                {category.count}
+              </p>
+            </div>
+          </div>
+        ))}
       </div>
-      <div className={styles.categories_card}>
-        {
-          category_list.map((category) => {
-            return (
-              <>
-                <div className={styles.single_card}>
-                  <div className={styles.category_img}>
-                    <img src={category.image} alt={category.name} className={styles.categoryImage} />
-                  </div>
-                  <div className={styles.category_details}>
-                    <h1 className={styles.category_name}>{category.name}</h1>
-                    <div className={styles.category_articles}>
-                      <img src={article_count_logo} alt="Article count icon" className={styles.articleCountIcon} />
-                      <p className={styles.category_post_number}>{category.count}</p>
-                    </div>
-                  </div>
-                </div>
-              </>
-            )
-          })
-        }
-      </div>
-    </>
+    </div>
   );
 };
+
 export default TopCategories;

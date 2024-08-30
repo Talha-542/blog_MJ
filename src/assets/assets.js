@@ -1,8 +1,8 @@
-import article_count_logo from './article_count_logo.png';
-import aurthur_logo from './aurthur_logo.png';
+import article_count_logo from './article_count_logo.svg';
+import aurthur_logo from './arthur_logo.svg';
 import filter from './filter.png';
 import hamburger_menu from './hamburger_menu.png';
-import search_icon from './search_icon.png';
+import search_icon from './Search.svg';
 import logo from './logo.png';
 import arrowIcon from './Arrow.png'
 import downArrow from './down arrow.png'

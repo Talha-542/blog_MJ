@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { StoreContext } from '../../store';
 import styles from './Posts.module.css';
-import arthur_logo from '../../assets/aurthur_logo.png';
+import arthur_logo from '../../assets/arthur_logo.svg'
 const Posts = () => {
   const { posts, category_list } = useContext(StoreContext);
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -16,7 +16,7 @@ const Posts = () => {
         </div>
         <div className={styles.category_selector}>
           <select className={styles.dropdown} onChange={(e) => setSelectedCategory(e.target.value)}>
-            <option value="All">Sort by</option>
+            <option className={styles.sortBY} value="All">Sort by</option>
             {category_list.map((category) => (
               <option key={category.id} value={category.name} >
                 {category.name}

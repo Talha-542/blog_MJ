@@ -1,99 +1,155 @@
 .container {
   display: flex;
   justify-content: space-between;
-  margin-top: 3em ;
-  margin-bottom: 1em;
+  align-items: center;
+  max-width: 1200px;
+  margin-top: 40px;
+  margin-bottom: 10px;
 }
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
 .title {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
+  margin: 0;
 }
+
+
+
 .dropdown {
   color: #00000080;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   border: 1px solid #00000033;
-  outline: #00000033;
   border-radius: 10px;
   padding: 10px 40px 10px 20px;
   appearance: none;
-  background: url("../../assets/down\ arrow.png") no-repeat right 12px center;
+  background: url("../../assets/down\ arrow.png") no-repeat right 25px center;
   cursor: pointer;
 }
+
 .posts {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
- gap: 23px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 23px;
+  max-width: 1200px;
+  margin-top: 5px;
 }
+
 .postCard {
   border: 1px solid #00000033;
   border-radius: 20px;
   padding: 20px;
 }
+
+.post_img {
+  margin-bottom: 10px;
+}
+
 .postImage {
-  width: 240px;
-  height: 120px;
+  width: 100%;
+  height: auto;
   border-radius: 10px;
 }
+
 .postTitle {
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
   margin: 10px 0;
+  display:-webkit-box;
+  -webkit-line-clamp: 2; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal; 
 }
+
+
 .postDescription {
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
 }
+
 .author_info {
   display: flex;
   align-items: center;
+  margin-top: 20px;
 }
+
+.author_img {
+  margin-right: 10px;
+}
+
 .arthurLogo {
   width: 36px;
   height: 36px;
-  margin-top: 10px;
 }
+
 .authour_name {
   font-size: 12px;
   font-weight: 600;
   line-height: 18px;
 }
+
 .post_date {
   font-size: 10px;
   font-weight: 400;
   line-height: 15px;
   color: #00000080;
 }
-@media (min-width: 320px) and (max-width: 767px) {
+
+@media (max-width: 430px) {
   .container {
-    margin: 1em;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1em;
+  }
+  .title {
+    font-size: 16px;
+    }
+  .dropdown {
+    width: 100%;
+    font-size: 14px;
   }
   .posts {
-    margin: 0;
     grid-template-columns: 1fr;
     gap: 10px;
   }
   .postCard {
     padding: 10px;
-    margin: 0 1em;
+    margin: 0;
   }
   .postImage {
-    width: 280px;
-    height: 170px;
+    width: 100%;
+    height: auto;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
-  .container {
-    margin: 2em 2em 0 2em;
-  }
+
+@media (min-width: 431px) and (max-width: 600px) {
   .posts {
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    margin: 0 2em;
-    margin-top: 1em;
+    gap: 15px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .posts {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .posts {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 23px;
   }
 }
