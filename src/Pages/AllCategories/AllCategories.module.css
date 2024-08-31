@@ -1,6 +1,7 @@
-.backConatainer{
+.backContainer{
     margin-top: 60px;
     margin-bottom: 40px;
+    max-width: 100px;
 }
 
 .back {
@@ -8,6 +9,7 @@
     align-items: center;
     text-decoration: none;
     color: black; 
+    /* max-width: 60px; */
   }
   
   .back::before {
@@ -50,6 +52,7 @@
     position: relative;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    cursor: pointer;
   }
   
   .categoryCard:hover {

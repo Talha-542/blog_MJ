@@ -12,7 +12,8 @@ import back from './back.svg'
 import category_1 from './category_1.png';
 import category_3 from './category_3.png';
 import category_4 from './category_4.png';
-// import category_3 from './category_.png'
+import category_2 from './category_2.png'
+import category_5 from './category_5.webp'
 
 // Import post images
 import post_1 from './post_1.png';
@@ -54,7 +55,7 @@ export const category_list = [
         id: 3,
         name: "Finance",
         count: "20 Articles",
-        image: category_3,
+        image: category_2,
     },
     {
         id: 4,
@@ -189,7 +190,7 @@ export const Allcategory_list = [
         id: 3,
         name: "Finance",
         count: "20 Articles",
-        image: category_3,
+        image: category_2,
     },
     {
         id: 8,
@@ -207,13 +208,13 @@ export const Allcategory_list = [
         id: 5,
         name: "Education",
         count: "20 articles",
-        image: category_4,
+        image: category_2,
     },
     {
         id: 6,
         name: "Food",
         count: "20 articles",
-        image: category_3,
+        image: category_5,
     },
     {
         id: 7,
