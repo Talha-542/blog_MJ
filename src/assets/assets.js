@@ -6,6 +6,7 @@ import search_icon from './Search.svg';
 import logo from './logo.png';
 import arrowIcon from './Arrow.png'
 import downArrow from './down arrow.png'
+import back from './back.svg'
 
 // Category list assets
 import category_1 from './category_1.png';
@@ -32,7 +33,8 @@ export const assets = {
     search_icon,
     logo,
     arrowIcon,
-    downArrow
+    downArrow,
+    back
 };
 
 export const category_list = [
@@ -166,5 +168,57 @@ export const posts = [
         auther_logo: aurthur_logo,
         date: "August 27, 2024",
         category: "Education",
+    },
+];
+
+
+export const Allcategory_list = [
+    {
+        id: 1,
+        name: "Tech",
+        count: "20 Articles",
+        image: category_1,
+    },
+    {
+        id: 2,
+        name: "Health",
+        count: "20 Articles",
+        image: category_3,
+    },
+    {
+        id: 3,
+        name: "Finance",
+        count: "20 Articles",
+        image: category_3,
+    },
+    {
+        id: 8,
+        name: "Travel",
+        count: "20 Articles",
+        image: category_4,
+    },
+    {
+        id: 4,
+        name: "Lifestyle",
+        count: "20 articles",
+        image: category_3,
+    },
+    {
+        id: 5,
+        name: "Education",
+        count: "20 articles",
+        image: category_4,
+    },
+    {
+        id: 6,
+        name: "Food",
+        count: "20 articles",
+        image: category_3,
+    },
+    {
+        id: 7,
+        name: "Entertainment",
+        count: "20 articles",
+        image: category_1,
     },
 ];
