@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Navbar.module.css';
-import hamburger_menu from '../../assets/hamburger_menu.png';
+import hamburger_menu from '../../assets/hamburger_menu.svg';
 import { Link } from 'react-router-dom';
 export default function Navbar() {
   return (
