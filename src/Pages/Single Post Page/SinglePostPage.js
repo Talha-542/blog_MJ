@@ -27,11 +27,7 @@ export default function SinglePostPage() {
             alert('All Fields are required');
             return;
         }
-
-        // Add the new comment to the comments list
         setComments([...comments, { name, comment }]);
-
-        // Clear the input fields
         setName('');
         setComment('');
     };
@@ -45,8 +41,12 @@ export default function SinglePostPage() {
             </div>
 
             <div className={styles.postTitle}>
-                <h1 className={styles.title}>{post.title}</h1>
-                <img src={share} alt="Share" />
+                <div>
+                    <h1 className={styles.title}>{post.title}</h1>
+                </div>
+                <div>
+                    <img src={share} alt="Share" />
+                </div>
             </div>
 
             <div className={styles.author_info}>
@@ -54,7 +54,7 @@ export default function SinglePostPage() {
                     <img src={post.auther_logo} alt="Author Logo" className={styles.authorLogo} />
                 </div>
                 <div style={{ marginLeft: '10px' }}>
-                    <h1 className={styles.author_name}>{post.autherName}</h1>
+                    <h1 className={styles.authorName}>{post.autherName}</h1>
                     <p className={styles.post_date}>{post.date}</p>
                 </div>
             </div>
