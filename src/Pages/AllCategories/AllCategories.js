@@ -1,11 +1,11 @@
 import React,{ useContext } from 'react'
 import { Link } from 'react-router-dom'
 import styles  from './AllCategories.module.css'
-import { StoreContext } from "../../store";
-import article_count_logo from "../../assets/article_count_logo.svg";
+import { StoreContext } from "../../store" 
+import article_count_logo from "../../assets/article_count_logo.svg" 
 
 export default function AllCategories() {
-  const { Allcategory_list } = useContext(StoreContext);
+  const { Allcategory_list } = useContext(StoreContext) 
   return (
    <div>
    <div className={styles.header}>
@@ -44,7 +44,7 @@ export default function AllCategories() {
     </div>
   </div>
   </div>
-);
+) 
 
 }
 
