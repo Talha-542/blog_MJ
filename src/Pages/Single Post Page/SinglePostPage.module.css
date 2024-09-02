@@ -52,9 +52,14 @@
   line-height: 15px;
   color: #00000080;
 }
-/* .postImage {
+.postImage {
     width: 100%;
-} */
+}
+.postImages {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
 .postImage2 {
     width: 100%;
     margin-right: 20px;
@@ -84,6 +89,9 @@
 .recentArticle {
     margin-bottom: 40px;
 }
+.commentsSection {
+    margin-bottom: 40px;
+}
 .comments {
     margin-bottom: 20px;
 }
@@ -110,7 +118,7 @@
 }
 .commentItem {
     display: flex;
-    margin-top: 40px;
+    margin-bottom: 40px;
 }
 .commentText {
     background-color: #0000001A;
@@ -119,4 +127,26 @@
     width: 100%;
     margin-left: 10px;
     font-weight: 400;
+}
+
+@media (min-width:320px) and (max-width:767px) {
+    .postImage2 {
+        width: 50%;
+        margin-right: 05px;
+    }
+    .postImage3 {
+        width: 50%;
+        margin-left: 05px;
+    }
+}
+@media (min-width: 768px) and (max-width:1023px) {
+    .postImage2 {
+        width: 50%;
+        margin-right: 05px;
+    }
+    .postImage3 {
+        width: 50%;
+        margin-left: 05px;
+    }
+
 }
