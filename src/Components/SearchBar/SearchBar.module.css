@@ -13,8 +13,8 @@
   }
   
   .searchIcon {
-    width: 18px; /* Adjust size as needed */
-    height: 18px; /* Adjust size as needed */
+    width: 18px; 
+    height: 18px;
     margin-right: 10px;
   }
   
@@ -38,6 +38,23 @@
   @media (max-width:780px)
   {
     .searchBarContainer{
-      margin-bottom: 10px;
+      margin-bottom: 10px;     
     }
   }
+
+  @media (min-width: 321px) and (max-width: 767px) {
+    .searchBarContainer {
+     max-width: 100%;
+    }
+  }
+  @media (max-width: 320px) {
+    .searchBarContainer {
+      display: none;
+    }
+  }
+  
+  
+  
+  
+  
+  
