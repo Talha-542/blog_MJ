@@ -15,15 +15,17 @@ const SearchBar = () => {
 
   return (
     <div className={styles.searchBarContainer}>
-      <img src={searchIcon} alt="Search Icon" className={styles.searchIcon} />
-      <input
-        type="text"
-        placeholder="Search"
-        className={styles.searchInput}
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        onKeyDown={handleKeyDown}
-      />
+        <form className={styles.searchForm}>
+        <img src={searchIcon} alt="Search Icon" className={styles.searchIcon} />
+        <input
+          type="text"
+          placeholder="Search"
+          className={styles.searchInput}
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          onKeyDown={handleKeyDown}
+        />
+      </form>
     </div>
   );
 };

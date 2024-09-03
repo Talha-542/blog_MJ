@@ -1,13 +1,14 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { posts } from "../../assets/assets"; 
 import styles from "./SearchResult.module.css";
+import SearchBar from "../../Components/SearchBar/SearchBar";
 
 const SearchResults = () => {
   const location = useLocation();
   const query = new URLSearchParams(location.search).get("query") || "";
 
-  console.log("Search Query:", query); // Add this line to check the query
+  console.log("Search Query:", query); 
 
   const filteredPosts = posts.filter(post => 
     post.title.toLowerCase().includes(query.toLowerCase()) ||
@@ -15,11 +16,19 @@ const SearchResults = () => {
   );
 
   return (
+    <>
     <div className={styles.container}>
+    <div className={styles.backContainer}>
+      <Link to="/" className={styles.back} style={{textDecoration:"none" }}>
+          Back
+      </Link>
+      </div>
+    <SearchBar/>
       <h1 className={styles.title}>Search Results for "{query}"</h1>
       {filteredPosts.length > 0 ? (
-        <div className={styles.posts}>
+          <div className={styles.posts}>
           {filteredPosts.map(post => (
+            <Link to={`/post/${post.id}`} style={{textDecoration: "none"}}>
             <div key={post.id} className={styles.postCard}>
               <img src={post.image} alt={post.title} className={styles.postImage} />
               <h2 className={styles.postTitle}>{post.title}</h2>
@@ -32,12 +41,14 @@ const SearchResults = () => {
                 </div>
               </div>
             </div>
+          </Link>
           ))}
         </div>
       ) : (
         <p>No posts found for this query.</p>
       )}
     </div>
+    </>
   );
 };
 
