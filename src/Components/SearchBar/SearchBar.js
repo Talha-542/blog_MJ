@@ -13,16 +13,9 @@ const SearchBar = () => {
     }
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault(); // Prevent form submission
-    if (query.trim()) {
-      navigate(`/search-results?query=${encodeURIComponent(query)}`);
-    }
-  };
-
   return (
     <div className={styles.searchBarContainer}>
-      <form onSubmit={handleSubmit} className={styles.searchForm}>
+        <form className={styles.searchForm}>
         <img src={searchIcon} alt="Search Icon" className={styles.searchIcon} />
         <input
           type="text"

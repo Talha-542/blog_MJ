@@ -8,7 +8,7 @@ const SearchResults = () => {
   const location = useLocation();
   const query = new URLSearchParams(location.search).get("query") || "";
 
-  console.log("Search Query:", query); // Add this line to check the query
+  console.log("Search Query:", query); 
 
   const filteredPosts = posts.filter(post => 
     post.title.toLowerCase().includes(query.toLowerCase()) ||
