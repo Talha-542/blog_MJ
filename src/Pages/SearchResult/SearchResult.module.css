@@ -1,0 +1,126 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    max-width: 1200px;
+    margin: 40px auto 10px;
+  }
+  
+  .title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .posts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 23px;
+    max-width: 1200px;
+    margin-top: 5px;
+  }
+  
+  .postCard {
+    border: 1px solid #00000033;
+    border-radius: 20px;
+    padding: 20px;
+    color: #000000;
+    background-color: #fff;
+  }
+  
+  .post_img {
+    margin-bottom: 10px;
+  }
+  
+  .postImage {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .postTitle {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 10px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+  }
+  
+  .postDescription {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+  
+  .author_info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .author_img {
+    margin-right: 10px;
+  }
+  
+  .authorLogo {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .authour_name {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+  }
+  
+  .post_date {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+    color: #00000080;
+  }
+  
+  @media (max-width: 430px) {
+    .container {
+      margin-bottom: 2em;
+      padding: 0 1em;
+    }
+    .title {
+      font-size: 16px;
+    }
+    .posts {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+    .postCard {
+      padding: 10px;
+    }
+  }
+  
+  @media (min-width: 431px) and (max-width: 600px) {
+    .posts {
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .posts {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 25px;
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .posts {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 23px;
+    }
+  }
+  
