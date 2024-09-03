@@ -13,17 +13,26 @@ const SearchBar = () => {
     }
   };
 
+  const handleSubmit = (event) => {
+    event.preventDefault(); // Prevent form submission
+    if (query.trim()) {
+      navigate(`/search-results?query=${encodeURIComponent(query)}`);
+    }
+  };
+
   return (
     <div className={styles.searchBarContainer}>
-      <img src={searchIcon} alt="Search Icon" className={styles.searchIcon} />
-      <input
-        type="text"
-        placeholder="Search"
-        className={styles.searchInput}
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        onKeyDown={handleKeyDown}
-      />
+      <form onSubmit={handleSubmit} className={styles.searchForm}>
+        <img src={searchIcon} alt="Search Icon" className={styles.searchIcon} />
+        <input
+          type="text"
+          placeholder="Search"
+          className={styles.searchInput}
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          onKeyDown={handleKeyDown}
+        />
+      </form>
     </div>
   );
 };
