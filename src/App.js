@@ -6,10 +6,12 @@ import AllCategories from "./Pages/AllCategories/AllCategories";
 import SinglePostPage from "./Pages/Single Post Page/SinglePostPage";
 import SearchResult from "./Pages/SearchResult/SearchResult";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollRestoration from "./scrollRestore"; 
 
 export default function App() {
   return (
     <BrowserRouter>
+      <ScrollRestoration /> 
       <div style={{ maxWidth: "90%", margin: "0 auto" }}>
         <Navbar />
         <Routes>
