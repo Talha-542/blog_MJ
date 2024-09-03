@@ -65,12 +65,6 @@ export const category_list = [
         image: category_4,
     },
     // {
-    //     id: 4,
-    //     name: "Lifestyle",
-    //     count: "20 articles",
-    //     image: category_3,
-    // },
-    // {
     //     id: 5,
     //     name: "Education",
     //     count: "20 articles",
@@ -87,6 +81,12 @@ export const category_list = [
     //     name: "Entertainment",
     //     count: "20 articles",
     //     image: category_1,
+    // },
+    // {
+    //     id: 8,
+    //     name: "Lifestyle",
+    //     count: "20 articles",
+    //     image: category_3,
     // },
 ] 
 

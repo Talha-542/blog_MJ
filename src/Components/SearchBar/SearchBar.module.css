@@ -1,0 +1,43 @@
+/* SearchBar.module.css */
+
+.searchBarContainer {
+    display: flex;
+    align-items: center;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    padding: 10px 15px;
+    background-color: #FFFFFF;
+    max-width: 300px; 
+    max-height:50px;
+    margin-right:12px ;
+  }
+  
+  .searchIcon {
+    width: 18px; /* Adjust size as needed */
+    height: 18px; /* Adjust size as needed */
+    margin-right: 10px;
+  }
+  
+  .searchInput {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    font-size: 16px;
+    color: #808080;
+  }
+  
+  .searchInput::placeholder {
+    color: #808080; /* Placeholder text color */
+  }
+  
+  .searchInput:focus {
+    outline: none;
+  }
+  
+
+  @media (max-width:780px)
+  {
+    .searchBarContainer{
+      margin-bottom: 10px;
+    }
+  }
