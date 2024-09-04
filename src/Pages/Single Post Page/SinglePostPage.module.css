@@ -1,9 +1,10 @@
 .header {
     margin-bottom: 2em;
 }
-.backConatainer {
+.backContainer {
   margin-top: 60px;
   margin-bottom: 40px;
+  max-width: 7%;
 }
 .back {
   display: flex;

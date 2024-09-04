@@ -1,24 +1,27 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  /* margin: 3em 0; */
   margin-top: 3em;
- 
 }
+
+
 .firstname {
   font-weight: 900;
   line-height: 36px;
   font-size: 24px;
 }
+
 .lastname {
   font-weight: 400;
   line-height: 26px;
   font-size: 24px;
 }
+
 .navigation {
   display: flex;
   align-items: center;
 }
+
 .blogs {
   font-size: 16px;
   font-weight: 400;
@@ -27,55 +30,62 @@
   text-decoration: none;
   color: #0075FF;
 }
-.menuIcon {
+
+.menuIcon, .mbl_menuIcon {
   width: 40px;
   height: 40px;
-  margin-right: 10px;
+  margin-right: 7px;
 }
+
+
 .mbl_menuIcon {
   display: none;
 }
+
+
 @media (min-width: 320px) and (max-width: 767px) {
   .navbar {
     margin: 1em;
     align-items: center;
   }
+
   .navigation {
     display: none;
   }
+
   .mbl_menuIcon {
     display: block;
     margin-left: auto;
-    width: 40px;
-    height: 40px;
   }
+
   .firstname,
   .lastname {
     font-size: 20px;
     line-height: 30px;
   }
 }
+
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .mbl_menuIcon {
     display: none;
   }
+
   .navbar {
     margin: 2em;
   }
+
   .firstname,
   .lastname {
     font-size: 24px;
     line-height: 36px;
   }
 }
-@media (min-width:1025px) and (max-width:2560px) {
+
+
+@media (min-width: 1025px) and (max-width: 1440px) {
   .navbar {
-    margin: 0;
+    max-width: auto ;
+    margin: 0 auto; 
   }
 }
-
-
-
-
-
-
