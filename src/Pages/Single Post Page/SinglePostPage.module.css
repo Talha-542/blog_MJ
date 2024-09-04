@@ -7,7 +7,8 @@
   align-items: center;
   text-decoration: none;
   color: black;
-  max-width: 30%;
+  max-width: 120px; 
+  padding: 5px 10px;  
 }
 .back:hover {
   color: black;
