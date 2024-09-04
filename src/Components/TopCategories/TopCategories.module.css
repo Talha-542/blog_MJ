@@ -130,24 +130,32 @@
   }
 
   .categoryCard {
-    width: 100%;
+    width: 120%; /* Increase the width to create more space */
     height: auto;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px; 
   }
 
   .categoryName {
     font-size: 16px;
+    padding-right: 5px;
+    flex-grow: 1; 
+    margin-left: 10px;
   }
 
   .articleCount {
     font-size: 12px;
+    margin-left: 10px;
+    margin-right: 20px; 
   }
 }
 
 @media (min-width: 431px) and (max-width: 767px) {
   .title {
     font-size: 20px;
-  }
+    }
 
   .seeAll {
     font-size: 15px;
@@ -159,7 +167,7 @@
   }
 
   .categoryCard {
-    width: 260px;
+    width: 300px;
     height: 90px;
   }
 
@@ -171,6 +179,9 @@
     font-size: 13px;
   }
 }
+
+
+
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .title {
@@ -187,7 +198,7 @@
   }
 
   .categoryCard {
-    width: 280px;
+    width: 300px;
     height: 95px;
   }
 
