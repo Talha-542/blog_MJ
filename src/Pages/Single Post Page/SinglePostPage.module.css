@@ -1,16 +1,13 @@
 .header {
     margin-bottom: 2em;
 }
-.backContainer {
-  margin-top: 60px;
-  margin-bottom: 40px;
-  max-width: 7%;
-}
+
 .back {
   display: flex;
   align-items: center;
   text-decoration: none;
   color: black;
+  max-width: 30%;
 }
 .back:hover {
   color: black;

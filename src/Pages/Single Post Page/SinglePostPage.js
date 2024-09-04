@@ -35,11 +35,9 @@ export default function SinglePostPage() {
   return (
     <>
       <div className={styles.header}>
-        <div className={styles.backContainer}>
-          <Link to="/" className={styles.back}>
-            Back
-          </Link>
-        </div>
+        <Link to="/" className={styles.back}>
+          Back
+        </Link>
       </div>
 
       <div className={styles.postTitle}>
@@ -47,7 +45,7 @@ export default function SinglePostPage() {
           <h1 className={styles.title}>{post.title}</h1>
         </div>
         <div className={styles.share}>
-          < img src={share} alt="Share" />
+          <img src={share} alt="Share" />
         </div>
       </div>
 
@@ -100,9 +98,7 @@ export default function SinglePostPage() {
 
       <div className={styles.commentsSection}>
         <h1 className={styles.comments}>Leave a comment</h1>
-        <form
-          onSubmit={commentSubmission}
-        >
+        <form onSubmit={commentSubmission}>
           <input
             type="text"
             placeholder="Name"
