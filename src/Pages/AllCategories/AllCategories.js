@@ -9,7 +9,7 @@ export default function AllCategories() {
   return (
    <div>
    <div className={styles.header}>
-      <div className={styles.backConatainer}>
+      <div className={styles.backContainer}>
       <Link to="/" className={styles.back}>
           Back
       </Link>
