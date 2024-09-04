@@ -23,6 +23,9 @@
   margin-right: 15px;
   display: inline-block;
 }
+.share{
+  cursor: pointer;
+}
 .postTitle {
   display: flex;
   justify-content: space-between;
